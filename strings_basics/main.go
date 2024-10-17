@@ -31,4 +31,6 @@ Brand: Nike`)
 	var s3 = "I love " + "Go " + "Programming"
 	fmt.Println(s3 + "!")
 
+	fmt.Println("Element at index 0:", string(s3[0]))
+
 }
