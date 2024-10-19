@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(go_math.geometry.cubeVolume(3))
+	fmt.Println(geometry.cubeVolume(3))
 }
 
 // creating a go mod file to this directory

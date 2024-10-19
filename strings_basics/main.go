@@ -28,9 +28,18 @@ Brand: Nike`)
 	fmt.Println("C:\\Users\\Dan") // "\" to escape the backslash
 
 	// Every concatinate creates a new string
+	// because String is immutable in go
 	var s3 = "I love " + "Go " + "Programming"
 	fmt.Println(s3 + "!")
 
-	fmt.Println("Element at index 0:", string(s3[0]))
+	// string is a slice of bytes in Go and in this case we will get 73 which is the decimal
+	// ASCII code for uppercase Letter "I"
+	fmt.Println("Element at index 0:", s3[0])
+
+	// This will give an error
+	// s3[5] = "x" // Strings are immutable in Go
+
+	fmt.Printf("%s\n", s3) //This will print out the string
+	fmt.Printf("%q\n", s3) // This will print out quoted string
 
 }
